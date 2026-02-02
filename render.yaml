@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: hrms-lite-api
+    env: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: DB_NAME
+        value: hrms_lite
+      - key: CORS_ORIGINS
+        sync: false
+
