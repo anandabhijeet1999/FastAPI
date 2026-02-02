@@ -6,7 +6,7 @@ class Settings(BaseSettings):
 
     mongodb_uri: str = "mongodb://localhost:27017"
     db_name: str = "hrms_lite"
-    cors_origins: str = "https://classy-bienenstitch-8b8297.netlify.app/employees"
+    cors_origins: str = "http://localhost:5173"
     mongodb_tls_insecure: bool = False
 
 
