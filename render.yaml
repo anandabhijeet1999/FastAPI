@@ -3,7 +3,9 @@ services:
     name: hrms-lite-api
     env: docker
     plan: free
-    dockerfilePath: ./backend/Dockerfile
+    # This file lives inside the `backend/` folder,
+    # so the Dockerfile path should be relative to that.
+    dockerfilePath: ./Dockerfile
     autoDeploy: true
     envVars:
       - key: MONGODB_URI
